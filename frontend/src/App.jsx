@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import "./App.css";
 
-const API_URL = "http://127.0.0.1:8000/api/scan";
+const API_URL = "https://ai-website-safety-analyzer.onrender.com/api/scan";
 
 const FEATURE_LABELS = {
   url_length: "URL length",
