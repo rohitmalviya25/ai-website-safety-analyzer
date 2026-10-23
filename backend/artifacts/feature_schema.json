@@ -1,0 +1,25 @@
+{
+  "feature_names": [
+    "url_length",
+    "has_ip_address",
+    "dot_count",
+    "https_flag",
+    "url_entropy",
+    "token_count",
+    "subdomain_count",
+    "query_param_count",
+    "tld_length",
+    "path_length",
+    "has_hyphen_in_domain",
+    "number_of_digits",
+    "suspicious_file_extension",
+    "domain_name_length",
+    "percentage_numeric_chars"
+  ],
+  "target_positive_class": 1,
+  "target_positive_class_meaning": "phishing",
+  "selected_model": "Random Forest",
+  "dataset": "LegitPhish Version 2",
+  "split_method": "GroupShuffleSplit by approximate domain",
+  "random_state": 42
+}
