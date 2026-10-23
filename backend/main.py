@@ -26,12 +26,13 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-    "http://localhost:5173",
-    "https://ai-website-safety-analyzer-hut1v534e.vercel.app",
+        "http://localhost:5173",
+        "https://ai-website-safety-analyzer.vercel.app",
+        "https://ai-website-safety-analyzer-hut1v534e.vercel.app",
     ],
-    allow_credentials=False,
-    allow_methods=["GET", "POST"],
-    allow_headers=["Content-Type"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 model = None
